@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <!-- Meta page information -->
+    <title>ZEIT Now Static Deployment Example</title>
+    <meta charset="utf-8">
+    <meta name="description" content="This website is an example of a static deployment made with ZEIT Now. Find more information at https://zeit.co/now">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+
+    <!-- Main Content -->
+    <div class="content">
+
+      <!-- Introduction to the page -->
+      <header>
+        <h1>Welcome to a Static Deployment</h1>
+        <h2>Hosted on <a href="https://zeit.co/now" target="_blank" rel="noopener noreferrer">ZEIT Now</a></h2>
+        <p><a href="https://github.com/zeit/now-examples/tree/master/static" target="_blank" rel="noopener noreferrer">This example shows a static website</a>, hosted on ZEIT Now, which loads posts from the Hacker News API.</p>
+        <p>By default, <b>Now <a href="https://zeit.co/docs/v2/deployments/basics">statically deploys and serves files</a></b> without any extra configuration necessary.</p>
+        <p>This deployment consists of an <a href="https://zeit.co/deployments/static-example.now.sh/source" target="_blank" rel="noopener noreferrer"><code>index.html</code></a>, <a href="https://zeit.co/deployments/static-example.now.sh/source?f=src/css/styles.css" target="_blank" rel="noopener noreferrer"><code>css/styles.css</code></a>, <a href="https://zeit.co/deployments/static-example.now.sh/source?f=src/js/main.js" target="_blank" rel="noopener
+            noreferrer"><code>js/main.js</code></a>, and an vendor script, <a href="https://zeit.co/deployments/static-example.now.sh/source?f=src/js/timeago.min.js" target="_blank" rel="noopener noreferrer"><code>js/timeago.min.js</code></a>.</p>
+        <p>To learn more about this example and how to deploy it or something similar yourself, see <a href="https://github.com/zeit/now-examples">the example on GitHub</a>.</p>
+      </header>
+
+      <!-- Display Hacker News posts-->
+      <main class="posts js-posts">
+
+        <!-- Posts List Title -->
+        <h2>Hacker News Posts</h2>
+
+        <!-- Fallback if JavaScript is disabled for the visitors browser -->
+        <noscript>This section requires JavaScript, sorry about that!</noscript>
+
+        <!-- Template to list posts after they have been retrieved from the Hacker News API -->
+        <template>
+          <article class="post">
+
+            <!-- Post Title including the external URL-->
+            <h3><a href="#" class="post__link js-post__title" target="_blank" rel="noopener noreferrer">Immersive Linear Algebra</a> - <a class="post__external-link js-post__ext-link" href="#" target="_blank">Post URL</a></h3>
+
+            <!-- Post metadata-->
+            <span class="post__metadata">
+              <span class="js-post__points">36</span> points by <a href="#" class="post__link js-post__user" target="_blank" rel="noopener noreferrer">reverse</a> <a href="#" class="js-post__link" target="_blank" rel="noopener noreferrer">
+                <span class="js-post__time">9 hours ago</span> |
+                <span class="js-post__comments">1 comment</span>
+              </a>
+            </span>
+          </article>
+        </template>
+      </main>
+
+      <!-- Outro Footer-->
+      <footer>
+        <p>Looking for more examples? <a href="https://zeit.co/examples" target="_blank" rel="noopener noreferrer">See all ZEIT Now deployment examples</a></p>
+      </footer>
+    </div>
+
+    <!-- JavaScript for loading and displaying Hacker News posts-->
+    <script src="js/timeago.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
