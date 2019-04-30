@@ -1,0 +1,53 @@
+h1{
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.text-center{
+    padding-bottom: 2rem;
+}
+
+.lead{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.form-control:focus{
+    outline: none;
+    border-color: #ced4da;
+    box-shadow: none;
+}
+.container{
+    width: 700px;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+}
+
+.invalid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+
+.error .invalid-feedback {
+    display: block
+}
+
+.error .form-control{
+    border-color: #dc3545;
+}
+
+@media only screen and (max-width: 768px) {
+    h1{
+        font-size: 2.5rem;
+    }
+    .lead {
+        font-size: 1rem;
+    }
+    .container{
+        width: 100%;
+    }
+  }

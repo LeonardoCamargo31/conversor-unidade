@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Conversor de unidade</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="text-center">
+            <h1>Conversor de unidade</h1>
+            <p class="lead">
+                Insira a distância em milhas, e terá o valor em metros
+            </p>
+        </div>
+        <form>
+            <div class="form-group form-control-milhas">
+                <label for="milhas">Distância em milhas</label>
+                <input type="text" class="form-control mask" id="milhas" placeholder="Insira as milhas" autocomplete="off" >
+                <div class="invalid-feedback"></div>
+            </div>
+            <div class="form-group">
+                <label for="metros">Distância em metros</label>
+                <input type="text" class="form-control mask" id="metros" placeholder="Valor em metros" disabled>
+            </div>
+        </form>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
